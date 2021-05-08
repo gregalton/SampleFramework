@@ -8,7 +8,7 @@ class SampleFramework {
     ///   - hexString: A six digit hexidecimal string.
     ///   - alpha: A number between 0.0 and 1.0 that defines the transparency. 0 is transparent.
     /// - Returns: A UIColor as defined by the hexString parameter
-    class func colorFromHexString(_ hexString: String, alpha: CGFloat = 1) -> UIColor {
+    public class func colorFromHexString(_ hexString: String, alpha: CGFloat = 1) -> UIColor {
         let r, g, b: CGFloat
         let offset = hexString.hasPrefix("#") ? 1 : 0
         let start = hexString.index(hexString.startIndex, offsetBy: offset)
